@@ -1,4 +1,5 @@
 import "aframe";
+import "./aframe/components/log";
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
