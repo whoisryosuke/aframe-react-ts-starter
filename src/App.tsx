@@ -4,7 +4,7 @@ import "./App.css";
 
 function App() {
   return (
-    <Scene>
+    <Scene stats>
       <a-assets>
         <img
           id="groundTexture"
@@ -39,6 +39,7 @@ function App() {
         geometry={{ primitive: "box" }}
         material={{ color: "red" }}
         position={{ x: 0, y: 0, z: -5 }}
+        hello-world
       />
       <Entity light={{ type: "point" }} />
       <Entity text={{ value: "Hello, WebVR!" }} />
@@ -55,6 +56,7 @@ function App() {
           }}
         />
       </Entity>
+      <Entity fps-counter position={{ x: 0, y: 0, z: -5 }} />
     </Scene>
   );
 }
